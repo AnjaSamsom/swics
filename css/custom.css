@@ -1,0 +1,296 @@
+:root{
+    --dark_green: #007256;
+    --green: #65ac45;
+    --yellow: #e4c520;
+    --light_blue: #d9f0ea;
+    --light_green:hsl(101, 59%, 88%);
+    --teal: #007256b1;
+    --dark: black;
+    --light: white;
+}
+
+html{
+    background-color: var(--green);
+}
+
+body{
+    background-color: var(--light_green);
+    color: var(--dark);
+    font-family: monospace;
+    border-radius: 0.2em;
+    text-decoration: none;
+    width:75%;
+    margin:2% auto;
+}
+
+.active{
+    color: var(--teal);
+}
+
+nav{
+    background-color: var(--yellow);
+    text-align: center;
+    padding: 1%;
+    font-size: 150%;
+    margin:0.5% auto 0.5% auto;
+    border-radius: 0.2em;
+}
+
+
+
+.nav_link{
+    color: var(--dark_green);
+    text-decoration: none;
+    padding: 5% 1%;
+}
+
+#mini_logo{
+    width:35%; 
+    margin:0% 35% 0% 35%;
+}
+
+#logo{
+    width:60 em;
+    padding:0.5%;
+    margin: auto;
+}
+
+header{
+    padding: 2.5%;
+}
+
+.title{
+    width:25%;
+    margin:auto;
+}
+
+footer{
+    text-align: center;
+    padding: 1%;
+    margin: 5%;
+    border-radius: 0.2em;
+
+}
+
+h1, h2, h3, h4{
+    text-align: center;
+    color: var(--dark_green);
+    font-family: monospace;
+    text-decoration: none;
+    width: 80%;
+    margin: auto;
+}
+
+h2, h3{
+    color: var(--green);
+    padding: 0.7%;
+}
+
+h3{
+    color: var(--teal);
+}
+
+.headshot{
+    width:50%;
+    margin: auto;
+}
+
+.bio_grid{
+    display:grid;
+    grid-template-columns: auto auto;
+    width:100%;
+    margin:auto;
+    padding:5% 0%;
+
+}
+
+.name{
+    grid-area:1/1/2/3;
+    padding: 1.5%;
+}
+
+.headshot{
+    grid-area:2/1/3/2;
+}
+
+.bio{
+    grid-area:2/2/4/3;
+}
+
+p{
+    color: var(--dark);
+    text-decoration: none;
+    max-width: 80%;
+    margin: auto;
+    font-family: "DejaVu Sans Mono", monospace;
+}
+
+
+.social{
+    width: 50em;
+    margin: auto;
+    padding: 2.5% 25%;
+}
+
+.active_page{
+    color: var(--light_green);
+    font-weight: bold;
+}
+
+.center_p{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+
+
+a:link { text-decoration: none; }
+
+
+a:visited { text-decoration: none; }
+
+
+a:hover { color: black; }
+
+
+a:active { text-decoration: none; }
+
+
+.gallery_img{
+    width:60%;
+    margin:2% 20%;
+}
+
+.cap{
+    font-size:0.85em;
+    color: --var(light);
+}
+
+.gallery{
+    width:60%;
+    margin:auto;
+    padding: 2.5%;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns: auto auto;
+    width:40em;
+    margin:auto;
+}
+
+.grid_vid{
+    width: 92%;
+    margin: auto;
+    padding: 2%;
+}
+
+#grid_vid1{
+    grid-area:1/1/2/2;
+
+}
+
+#grid_vid1{
+    grid-area:2/2/3/2;
+
+}
+
+.calendar{
+    max-width:80%;
+    margin: auto;
+    padding: 2% 15%;
+
+}
+
+.typewriter {
+    font-family: monospace;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid darkgreen; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .10em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 80% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color:  darkgreen; }
+  }
+  .calendar{ 
+    text-align: center;
+  
+  }
+  .typingContainer{
+    display: grid;
+  place-items: center;
+  }
+
+
+/*
+working on this
+*/ 
+
+	
+/* 	&:hover &__image {
+		filter: grayscale(1);
+	}
+	
+	&__column {
+		display: flex;
+		flex-direction: column;
+		width: 20%;
+	}
+	
+	&__link {
+		margin: 2px;
+		overflow: hidden;
+		
+		&:hover {
+			.gallery__image {
+				filter: grayscale(0);
+			}
+			
+			.gallery__caption {
+				opacity: 1;
+			}
+		}
+	}
+	
+	&__thumb {
+		position: relative;
+	}
+	
+	&__image {
+		display: block;
+		width: 100%;
+		transition: .3s;
+		
+		&:hover {
+			transform: scale(1.1);
+		}
+	}
+	
+	&__caption {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		padding: 25px 15px 15px;
+		width: 100%;
+		font-family: 'Raleway', sans-serif;
+		font-size: 16px;
+		color: white;
+		opacity: 0;
+		background: linear-gradient(0deg, rgba(0, 0, 0, .5) 0%, rgba(255, 255 ,255 , 0) 100%);
+		transition: .3s;
+	} */
+

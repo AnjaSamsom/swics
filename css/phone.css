@@ -1,0 +1,48 @@
+html{
+    background-color: var(--yellow);
+}
+
+.name{
+    grid-area:1/1/2/3;
+    padding: 1.5%;
+}
+
+.headshot{
+    grid-area:2/1/3/3;
+}
+
+.bio{
+    grid-area:3/1/4/3;
+}
+
+.gallery_img{
+    width:100%;
+    margin:2% auto;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns: auto;
+    width:100%;
+    margin:auto;
+}
+
+.grid_vid{
+    width: 92%;
+    margin: auto;
+    padding: 2%;
+}
+
+#grid_vid1{
+    grid-area:1/1/2/2;
+
+}
+
+#grid_vid1{
+    grid-area:2/1/3/2;
+
+}
+
+.social{
+    display:none;
+}
